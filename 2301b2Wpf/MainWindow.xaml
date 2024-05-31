@@ -1,0 +1,45 @@
+﻿<Window x:Class="_2301b2Wpf.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_2301b2Wpf"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <Grid Grid.Column="0">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <TextBlock Grid.Row="0"  Text="Enter your Details :-" FontSize="35" FontWeight="Bold" TextAlignment="Justify" VerticalAlignment="Center" Margin="4" FontFamily="Times New Roman"/>
+            <TextBox x:Name="textBox1" HorizontalAlignment="Left" Margin="28,0,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Name" VerticalAlignment="Center" Width="295" Height="33" FontSize="20" />
+
+            <TextBox x:Name="textBox2" HorizontalAlignment="Left" Margin="28,0,0,0" Grid.Row="2" TextWrapping="Wrap" Text="Age" FontSize="20" VerticalAlignment="Center" Width="295" Height="33"/>
+            <Button x:Name="button" Content="Submit" HorizontalAlignment="Left" Margin="28,21,0,0" Grid.Row="3" VerticalAlignment="Top" Height="33" Width="88" Background="red" Foreground="White" FontWeight="Bold" FontSize="15" BorderBrush="Black" Click="Button_Click"/>
+
+
+        </Grid>
+        <Grid Grid.Column="1" >
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <TextBlock Grid.Row="0"  Text="Your Details :" FontSize="35" FontWeight="Bold" TextAlignment="Justify" VerticalAlignment="Center" Margin="4" FontFamily="Times New Roman"/>
+            <TextBlock Grid.Row="1" Name="nameblock" Text="" FontSize="35"  Foreground="Gray" TextAlignment="Justify" VerticalAlignment="Center" Margin="4" FontFamily="Times New Roman"/>
+            <TextBlock Grid.Row="2" Name="ageblock"  Text="" FontSize="35" Foreground="Gray" TextAlignment="Justify" VerticalAlignment="Center" Margin="4" FontFamily="Times New Roman"/>
+        </Grid>
+
+
+    </Grid>
+
+</Window>
